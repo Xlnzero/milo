@@ -14,10 +14,11 @@ body::-webkit-scrollbar-track {
 }
 body
 {
-	background: black;
+	background: gray;
 	color: white;
 	font-family: roboto, sans serif;
 	font-size: 3em;
+
 }
 
 

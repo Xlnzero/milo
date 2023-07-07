@@ -1,14 +1,27 @@
 <!doctype html>
-<html>
+<html lang="ru">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Документ без названия</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="canonical" href="http://milo.by"/>
 </head>
 
 <body>
-	
+	<script>
+window.addEventListener('wheel', changeBackgroundImage);
+
+function changeBackgroundImage(event) {
+  const body = document.querySelector('body');
+
+  if (event.deltaY > 0) {
+    body.style.backgroundImage = 'url(Pictures/1.png)';
+  } else {
+    body.style.backgroundImage = 'url(Pictures/2.png)';
+  }
+}
+</script>
 	<div><p>Скоро</p></div>
 	<div><p><img src="6.svg"></p></div>
 	
