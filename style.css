@@ -14,7 +14,11 @@ body::-webkit-scrollbar-track {
 }
 body
 {
+	
 	background: gray;
+	background-size: cover;
+	background-repeat:space;
+	background-position: center;
 	color: white;
 	font-family: roboto, sans serif;
 	font-size: 3em;
