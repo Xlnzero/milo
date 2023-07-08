@@ -7,34 +7,82 @@
 	
 }
 body::-webkit-scrollbar {
-  width: 1px;               /* ширина scrollbar */
+  width: 0px;               /* ширина scrollbar */
 }
 body::-webkit-scrollbar-track {
   background: orange;        /* цвет дорожки */
 }
+body {
+  overflow-y: hidden;
+}
+
 body
+
 {
-	
+	width: 100vw;
+	height: 100vh;
 	background: gray;
-	background-size: cover;
-	background-repeat:space;
+background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
-	color: white;
 	font-family: roboto, sans serif;
-	font-size: 3em;
+	
 
 }
 
 
-div {
+.cl1 {
+		color: red;
+z-index: 2;
   height: 10em;
   display: flex;
   align-items: center;
-  justify-content: center }
-div p {
-  margin: 50px }
+  justify-content: center;
+	position: relative;
+}
+
+div.cl1 p {
+  margin: 50px;
+font-size: 3em;}
 img
 {
 	width: 100px;
 	height: 100px;
+}
+.container {
+	z-index: 1;
+ display: flex;
+  flex-wrap: wrap;
+	position: absolute;
+	bottom: 0px;
+}
+
+.block {
+	
+	width: 100%;
+	  margin: auto; /* Центрируем третий элемент по горизонтали */
+	padding: 5vw;
+}
+
+.block:nth-child(3) {
+  margin: auto; /* Центрируем третий элемент по горизонтали */
+}
+.txt
+{
+	font-size: 1.5em;
+	text-align:justify;
+	font-weight: 600;
+
+
+  backdrop-filter: blur(10px);
+	color: white;
+}
+@media (max-width: 768px) {
+  .block {
+    width: 100%;
+  }
+	.txt
+{
+	font-size: 1em;
+}
 }
