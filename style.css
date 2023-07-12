@@ -84,6 +84,7 @@ img
 {
 	position: absolute;
 	bottom: 25px;
+	z-index: 2;
 }
 @media (max-width: 768px) {
   .block {
