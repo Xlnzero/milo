@@ -1,3 +1,2 @@
-Sitemap: https://www.milo.by/sitemap.xml
 User-Agent: *
-Allow: /
+Sitemap: https://www.milo.by/sitemap.xml
