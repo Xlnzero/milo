@@ -80,6 +80,11 @@ img
   backdrop-filter: blur(10px);
 	color: white;
 }
+.cl2
+{
+	position: absolute;
+	bottom: 25px;
+}
 @media (max-width: 768px) {
   .block {
     width: 100%;
