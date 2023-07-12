@@ -1,2 +1,3 @@
 User-Agent: *
+
 Sitemap: https://www.milo.by/sitemap.xml
