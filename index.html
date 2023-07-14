@@ -41,6 +41,8 @@
 <body id="all">
 	
 	
+	
+	
 	<script>
 	function startup(){
 		var el = document.getElementById('all');
@@ -49,20 +51,58 @@
 		el.addEventListener("touchcancel", arr3, false);
 		el.addEventListener("touchmove", arr4, false);
 	};
-		function arr() {
-		var lo = document.getElementById('all');
-		 lo.style.backgroundImage = "url('Pictures/2.png')";
 		
-};
-		function arr2() {
-		var lo = document.getElementById('all');
-		lo.style.backgroundImage = "url('Pictures/1.png')";
+		
+		
+
+
+		
+		
+				function checkImageExists(imageUrl, callback) {
+  var img = new Image();
+  img.onload = function() {
+    callback(true);
+  };
+  img.onerror = function() {
+    callback(false);
+  };
+  img.src = imageUrl;
+}
+
+				var cur = 2;
+
+				function arr() {
+			
+		var lo1 = document.getElementById('all');
+		var imageUrl = 'Pictures/'+cur+'.png';
+checkImageExists(imageUrl, function(exists) {
+  if (exists) {
+	  lo1.style.backgroundImage = "url('Pictures/"+cur+".png')";
+    console.log('Изображение существует');
+	 cur++;
+const outputElement = document.getElementById('output');
+		outputElement.textContent = cur;
+  } else {
+    console.log('Изображение не найдено');
+	cur = 2;
+	 lo1.style.backgroundImage = "url('Pictures/1.png')";
+	  const outputElement = document.getElementById('output');
+		outputElement.textContent = cur;
+  }
+});
 		
 };
 
-	startup();
+	
+				startup();
 	
 	</script>
+	
+	
+	
+	
+	
+	
 	<script>
 const images = ['Pictures/1.png', 'Pictures/2.png', 'Pictures/3.png']; // список фоновых изображений
   let currentIndex = 0; // индекс текущего изображения
@@ -87,6 +127,12 @@ const images = ['Pictures/1.png', 'Pictures/2.png', 'Pictures/3.png']; // спи
 
   window.addEventListener('wheel', changeBackgroundImage);
 </script>
+	
+	
+	
+	
+	
+	
 	<div class="cl1"><p>Скоро</p></div>
 	<div class="cl1"><p><img src="6.svg"></p></div>
 	<div class="container before_txt">
