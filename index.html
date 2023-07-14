@@ -38,7 +38,31 @@
 	<link rel="icon" href="6.svg" type="image/svg+xml">
 </head>
 
-<body>
+<body id="all">
+	
+	
+	<script>
+	function startup(){
+		var el = document.getElementById('all');
+		el.addEventListener("touchstart", arr, false);
+		el.addEventListener("touchend", arr2, false);
+		el.addEventListener("touchcancel", arr3, false);
+		el.addEventListener("touchmove", arr4, false);
+	};
+		function arr() {
+		var lo = document.getElementById('all');
+		 lo.style.backgroundImage = "url('Pictures/2.png')";
+		
+};
+		function arr2() {
+		var lo = document.getElementById('all');
+		lo.style.backgroundImage = "url('Pictures/1.png')";
+		
+};
+
+	startup();
+	
+	</script>
 	<script>
 const images = ['Pictures/1.png', 'Pictures/2.png', 'Pictures/3.png']; // список фоновых изображений
   let currentIndex = 0; // индекс текущего изображения
