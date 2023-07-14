@@ -85,6 +85,7 @@ img
 	position: absolute;
 	bottom: 25px;
 	z-index: 3;
+	align-content: center;
 }
 @media (max-width: 768px) {
   .block {
