@@ -1,0 +1,62 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+	margin: 0;
+
+	
+}
+body::-webkit-scrollbar {
+  width: 0px;               /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: orange;        /* цвет дорожки */
+}
+body {
+	
+	cursor: url(cursor.svg)16 16, url(cursor2.svg), default;
+height: 100vh;
+overflow-y: hidden;
+font-family: roboto, sans serif;
+
+}
+
+a
+{
+
+	cursor: url(cursor2.svg)16 16, url(cursor2.svg), pointer;
+
+	text-decoration: none;
+ 	color: inherit;
+}
+.before_all
+{
+	height: 100%;
+	padding: 20%;
+	background: #191919;
+
+}
+.all
+{
+	display: block;
+	height: 100%;
+	display: grid;
+  grid-template-columns: auto auto auto; /* Задает три столбца равной ширины */
+  grid-gap: 1vw; /* Задает промежуток между элементами */
+	text-align: center;
+}
+.block
+{
+	background: #2E2E2E;
+	border-radius: 1vw;
+
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	height: 20vh;
+		color: white;
+	font-size: 1em;
+	transition:  0.5s ease-in-out; 
+
+
+	
+}

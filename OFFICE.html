@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-62TRCTX3X7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-62TRCTX3X7');
+</script>
+
+
+	
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(94272160, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/94272160" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MILO</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="/6.svg">
+	<link rel="icon" href="6.svg" type="image/svg+xml">
+</head>
+
+<body id="all">
+	
+	
+	
+	
+	<script>
+	function startup(){
+		var el = document.getElementById('all');
+		el.addEventListener("touchstart", arr, false);
+		el.addEventListener("touchend", arr2, false);
+		el.addEventListener("touchcancel", arr3, false);
+		el.addEventListener("touchmove", arr4, false);
+	};
+		
+		
+		
+
+
+		
+		
+				function checkImageExists(imageUrl, callback) {
+  var img = new Image();
+  img.onload = function() {
+    callback(true);
+  };
+  img.onerror = function() {
+    callback(false);
+  };
+  img.src = imageUrl;
+}
+
+				var cur = 2;
+
+				function arr() {
+			
+		var lo1 = document.getElementById('all');
+		var imageUrl = 'Pictures/'+cur+'.png';
+checkImageExists(imageUrl, function(exists) {
+  if (exists) {
+	  lo1.style.backgroundImage = "url('Pictures/"+cur+".png')";
+    console.log('Изображение существует');
+	 cur++;
+const outputElement = document.getElementById('output');
+		outputElement.textContent = cur;
+  } else {
+    console.log('Изображение не найдено');
+	cur = 2;
+	 lo1.style.backgroundImage = "url('Pictures/1.png')";
+	  const outputElement = document.getElementById('output');
+		outputElement.textContent = cur;
+  }
+});
+		
+};
+
+	
+				startup();
+	
+	</script>
+	
+	
+	<script>
+		
+		var numberOfImages = 5;
+		var cur2 = 2;
+
+function startup2() {
+  var el2 = document.getElementById('all');
+  el2.addEventListener('wheel', arr2);
+
+  function check2(URL, OUT) {
+    var img = new Image();
+    img.onload = function() {
+      OUT(true);
+    }
+    img.onerror = function() {
+      OUT(false);
+    }
+    img.src = URL;
+  }
+
+  function arr2(event) {
+    var URL = 'Pictures/' + cur2 + '.png';
+    var lo2 = document.getElementById('all');
+
+    if (event.deltaY > 0) {
+      cur2++;
+      if (cur2 > numberOfImages) {
+        cur2 = 1;
+      }
+    } else {
+      cur2--;
+      if (cur2 < 1) {
+        cur2 = numberOfImages;
+      }
+    }
+
+    check2(URL, function(exit) {
+      if (exit) {
+        lo2.style.backgroundImage = "url('Pictures/" + cur2 + ".png')";
+      } else {
+        cur2 = 1;
+        lo2.style.backgroundImage = "url('Pictures/1.png')";
+      }
+    });
+  }
+}
+
+startup2();
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="container">
+	<div class="cl1" ><p><h1>Скоро</h1></p></div>
+	<div class="cl1"><p><img src="6.svg"></p></div>
+	<div class="cl1 ">
+	<div>Приветствуем вас на нашем сайте! Мы рады приветствовать вас в компании, которая начинает свой захватывающий путь к успеху. Мы стремимся предложить вам инновационные решения, высокое качество продукции и непревзойденное обслуживание. Наша команда молода, энергична и полна амбиций, и мы готовы покорить мир своими уникальными продуктами. Мы верим в нашу миссию и обещаем вам неустанное streben к совершенству. Присоединяйтесь к нам в этом захватывающем путешествии и будем создавать будущее вместе!</div>
+
+		</div>
+	<div class="cl1"><p>Республика Беларусь. город Гродно. 230005.</p></div></div>
+	
+</body>
+	
+</html>
