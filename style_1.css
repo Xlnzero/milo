@@ -67,9 +67,6 @@ a
 @media (max-width: 1100px) {
  .all {
   transform: rotate(90deg);
-}
-.block
-{
-transform: rotate(270deg);
+text-orientation: upright;
 }
 }
