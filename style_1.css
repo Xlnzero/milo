@@ -64,3 +64,9 @@ a
 {
 	height: 110%;
 }
+@media (max-width: 500px) {
+  .all {
+    grid-template-rows: auto auto auto;
+    height: 20%;
+  }
+}
