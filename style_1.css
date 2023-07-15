@@ -68,5 +68,8 @@ a
  .all {
   transform: rotate(90deg);
 }
-
+.block
+{
+transform: rotate(-90deg);
+}
 }
