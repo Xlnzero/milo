@@ -39,38 +39,42 @@ backdrop-filter: blur(5px);
 	width: 100%;
 	text-align: center;
 	background: rgba(72,72,72,0.7);
+	
 
 }
 
 .cl1 {
 	width: 100%;
-	padding: 5%;
+	padding: 1vh;
 	font-size: 1em;
+	height: auto;
 	color: white;
 	z-index: 2;
 	text-align: center;
-	margin: auto;
+	display: flex;
+  justify-content: center;
+  align-items: center;
 }
-p
-{
-	display: inline-block; /* Для центрирования текста по горизонтали */
-  text-align: center;
-}
+
 img
 {
-	width: 4vh;
-	height: 4vh;
+	width: 5vh;
+
 }
 
 
 
 
 @media (max-width: 768px) {
-  .block {
-    width: 100%;
-  }
+
 	.txt
 {
 	font-size: 1em;
+}
+	
+
+	img
+{
+	width: 5vh;
 }
 }
