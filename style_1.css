@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 *{
 	margin: 0;
-
+padding: 0;
 	
 }
+
 body::-webkit-scrollbar {
   width: 0px;               /* ширина scrollbar */
 }
@@ -26,8 +27,27 @@ a
 	cursor: url(cursor2.svg)16 16, url(cursor2.svg), pointer;
 
 	text-decoration: none;
- 	color: inherit;
+
 }
+a {
+  touch-action: manipulation;
+}
+a:link {
+  color: white;
+	
+}
+a:visited {
+  color: white;
+}
+a:active
+{
+	  color: white;
+
+}
+a:focus {
+  outline: 2px solid yellow;
+}
+
 .before_all
 {
 	height: 100%;
