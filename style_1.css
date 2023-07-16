@@ -18,16 +18,22 @@ body {
 height: 100vh;
 overflow-y: hidden;
 font-family: roboto, sans serif;
-touch-action: none;
+
 }
 
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+}
 a
 {
 
 	cursor: url(cursor2.svg)16 16, url(cursor2.svg), pointer;
 
 	text-decoration: none;
-touch-action: none;
+
 }
 
 .before_all
