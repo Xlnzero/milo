@@ -13,12 +13,12 @@ body::-webkit-scrollbar-track {
   background: orange;        /* цвет дорожки */
 }
 body {
-	
+
 	cursor: url(cursor.svg)16 16, url(cursor2.svg), default;
 height: 100vh;
 overflow-y: hidden;
 font-family: roboto, sans serif;
-
+touch-action: none;
 }
 
 a
@@ -27,25 +27,7 @@ a
 	cursor: url(cursor2.svg)16 16, url(cursor2.svg), pointer;
 
 	text-decoration: none;
-
-}
-a {
-  touch-action: manipulation;
-}
-a:link {
-  color: white;
-	
-}
-a:visited {
-  color: white;
-}
-a:active
-{
-	  color: white;
-
-}
-a:focus {
-  outline: 2px solid yellow;
+touch-action: none;
 }
 
 .before_all
