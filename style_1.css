@@ -18,7 +18,6 @@ body {
 height: 100vh;
 overflow-y: hidden;
 font-family: roboto, sans serif;
-
 }
 
 a {
@@ -45,27 +44,32 @@ a:visited {
 {
 	height: 100%;
 	padding: 20%;
-	background: #191919;
-
+background-image: url("ФОН.jpg");
+background-size: cover;
+}
+.before_all
+{
 }
 .all
 {
+
 	height: 20%;
 	display: grid;
   grid-template-columns: auto auto auto; /* Задает три столбца равной ширины */
   grid-gap: 1vw; /* Задает промежуток между элементами */
 	text-align: center;
+
 }
 .block
 {
-	background: #2E2E2E;
+	background: #FFF1E1;
 	border-radius: 1vw;
 
 	display: flex;
   justify-content: center;
   align-items: center;
 	height: 20vh;
-		color: white;
+		color: #bb2649;
 	font-size: 1em;
 	transition:  0.5s ease-in-out; 
 
@@ -73,12 +77,13 @@ a:visited {
 	
 }
 a:active .block
-{
-	background:#454545;
+{	
+	background:#9F7651;
 }
 .block:hover
 {
-	background:#454545;
+	background:#9F7651;
+color: #FFF1E1;
 	height: 110%;
 }
 
@@ -93,14 +98,13 @@ a:active .block
 	}
 	.block
 {
-	background: #2E2E2E;
+
 	border-radius: 1vh;
 
 	display: flex;
   justify-content: center;
   align-items: center;
 	height: 10vh;
-		color: white;
 	font-size: 1em;
 	transition:  0.2s ease-in-out; 
 
