@@ -44,7 +44,9 @@ a:visited {
 {
 	height: 100%;
 	padding: 20%;
-background: gray;
+background-image: url("Pictures/0.jpg");
+	background-size: cover;
+	background-position: center;
 }
 .before_all
 {
