@@ -39,12 +39,32 @@ a
 a:visited {
   color: white;
 }
+.center
+{
+	z-index: 2;
+	height: 30vh;
+	width: 100vw;
+	background-color: #ffbe99;
+
+
+}
+.logo
+{
+	margin: auto;
+	width: 30%;
+	height: 100%;
+z-index: 2;
+	background-image: url("Pictures/Ресурс 2.svg");
+	background-size: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 
 .before_all
 {
 	height: 100%;
-	padding: 20%;
-background-image: url("Pictures/0.jpg");
+	padding: 5% 10%;
+	background-color: #ffbe99;
 	background-size: cover;
 	background-position: center;
 }
@@ -90,6 +110,11 @@ color: #FFF1E1;
 
 @media (max-width: 800px )
 {
+	.logo
+	{
+		width: 65%;
+		
+	}
 	.all
 	{
 		height: auto;
